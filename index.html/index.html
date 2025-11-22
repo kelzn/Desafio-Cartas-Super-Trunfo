@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LegisClara — Engajamento cidadão simplificado</title>
+  <meta name="description" content="LegisClara: plataforma que transforma propostas e projetos de lei em textos claros, visualizações e ações para que cidadãos entendam, discutam e influenciem a legislação."/>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1320; --accent:#7dd3fc; --muted:#9aa4b2; --glass: rgba(255,255,255,0.04);
+      --maxw:1100px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:#e6eef6;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background: linear-gradient(180deg,#071022 0%, #071728 60%);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
+    .container{max-width:var(--maxw);margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{
+      width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#60a5fa);
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:#04263b;
+      box-shadow: 0 6px 18px rgba(7,18,36,0.6);
+    }
+    h1{font-size:28px;margin:0}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;margin-top:28px;align-items:center}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:22px;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+    .cta{display:flex;gap:12px;margin-top:18px}
+    .btn{padding:10px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+    .btn-primary{background:var(--accent);color:#04263b}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .mock{border-radius:10px;overflow:hidden}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+    .feature{background:var(--glass);padding:14px;border-radius:10px}
+    .feature h3{margin:0 0 8px;font-size:16px}
+    .flow{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .step{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;min-width:140px}
+    .section{margin-top:28px}
+    footer{color:var(--muted);margin-top:36px;padding:24px 0;border-top:1px solid rgba(255,255,255,0.03)}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    /* responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr; padding-bottom:10px}
+      .features{grid-template-columns:repeat(2,1fr)}
+      .two-col{grid-template-columns:1fr}
+    }
+    @media (max-width:520px){
+      .features{grid-template-columns:1fr}
+    }
+    /* accessibility focus */
+    a:focus, button:focus {outline:3px solid rgba(125,211,252,0.18);outline-offset:2px; border-radius:8px}
+    img.responsive{width:100%;height:auto;display:block}
+    .badge{display:inline-block;padding:6px 10px;background:rgba(125,211,252,0.08);color:var(--accent);border-radius:999px;font-weight:700;font-size:12px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">LC</div>
+        <div>
+          <h1>LegisClara</h1>
+          <p class="lead">Tradução, contexto e ação — a ponte entre cidadão e legislação.</p>
+        </div>
+      </div>
+      <nav aria-label="Navegação principal">
+        <a href="#ideia">Ideia</a>
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#acao">Ação</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="card">
+          <span class="badge" aria-hidden="true">Projeto · Prova de conceito</span>
+          <h2 style="margin-top:12px">Entenda projetos de lei em minutos — participe com voz e impacto</h2>
+          <p style="color:var(--muted)">LegisClara usa IA para transformar textos legais complexos em resumos simples, visualizações e ações concretas (ex.: contato com representantes, petições, discussões públicas). Ideal para cidadãos, ONGs, escolas e jornalistas.</p>
+
+          <div class="features" aria-hidden="false">
+            <div class="feature">
+              <h3>Resumo automático</h3>
+              <p class="lead" style="color:var(--muted)">Resumo em linguagem simples (3 níveis: 30s, 3 min, 10 min).</p>
+            </div>
+            <div class="feature">
+              <h3>Mapa de impacto</h3>
+              <p class="lead" style="color:var(--muted)">Gráficos e mapas mostrando quem é afetado e onde.</p>
+            </div>
+            <div class="feature">
+              <h3>Ação direta</h3>
+              <p class="lead" style="color:var(--muted)">Botões para enviar e-mails padronizados, assinar petições ou abrir debates locais.</p>
+            </div>
+          </div>
+
+          <div class="flow" aria-hidden="false" style="margin-top:14px">
+            <div class="step"><strong>1</strong><div style="font-size:13px;color:var(--muted)">Entrada do projeto (URL / PDF / texto)</div></div>
+            <div class="step"><strong>2</strong><div style="font-size:13px;color:var(--muted)">Análise semântica + resumo</div></div>
+            <div class="step"><strong>3</strong><div style="font-size:13px;color:var(--muted)">Impacto e stakeholders</div></div>
+            <div class="step"><strong>4</strong><div style="font-size:13px;color:var(--muted)">Ações & debate público</div></div>
+          </div>
+
+          <div class="cta">
+            <button class="btn btn-primary" onclick="document.getElementById('acao').scrollIntoView()">Quero experimentar</button>
+            <button class="btn btn-ghost" onclick="document.getElementById('funcionalidades').scrollIntoView()">Ver funcionalidades</button>
+          </div>
+        </div>
+
+        <aside class="mock card" aria-labelledby="mockTitle">
+          <h3 id="mockTitle" style="margin:0 0 10px">Preview — Painel do LegisClara</h3>
+          <img class="responsive" src="https://images.unsplash.com/photo-1526636010723-2f4b10b9f3b6?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=8b9a1d4d6d5f8b3e2eabf13a9b0d9b9f" alt="Tela de exemplo com resumo de projeto de lei e gráficos" />
+          <p style="color:var(--muted);margin-top:8px;font-size:14px">Visualização simulada: título do projeto, resumo curto e gráficos de impacto por região.</p>
+        </aside>
+      </section>
+
+      <section id="ideia" class="section card" role="region" aria-label="A ideia">
+        <h2>Qual é a ideia?</h2>
+        <p style="color:var(--muted)">Projetos de lei e proposições são documentos técnicos longos — a maioria das pessoas não tem tempo ou formação para entender o que muda de fato. O <strong>LegisClara</strong> transforma essas peças em linguagem acessível, destacando consequências práticas, stakeholders afetados, contra-argumentos comuns e caminhos para participação. Assim o cidadão passa de consumidor passivo da notícia para ator ativo do processo legislativo.</p>
+
+        <div class="two-col" style="margin-top:12px">
+          <div>
+            <h3>Problemas que resolvemos</h3>
+            <ul style="color:var(--muted)">
+              <li>Barreira de linguagem técnica</li>
+              <li>Falta de contexto localizado</li>
+              <li>Ausência de caminhos claros para ação</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Benefícios</h3>
+            <ul style="color:var(--muted)">
+              <li>Cidadãos melhor informados</li>
+              <li>Debate público mais qualificado</li>
+              <li>Maior responsabilização de representantes</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="funcionalidades" class="section">
+        <h2>Funcionalidades principais</h2>
+
+        <div class="card" style="margin-top:12px">
+          <h3>1. Resumo em camadas</h3>
+          <p style="color:var(--muted)">Três comprimentos: micro (bate-papo), resumo (pontos-chave) e detalhado (análise com citações dos trechos relevantes).</p>
+
+          <h3 style="margin-top:12px">2. Highlights e riscos</h3>
+          <p style="color:var(--muted)">Detecção automática de trechos com impacto econômico, direitos civis, orçamento e prazos.</p>
+
+          <h3 style="margin-top:12px">3. Mapa de stakeholders</h3>
+          <p style="color:var(--muted)">Quem ganha, quem perde, e como cada grupo poderá ser afetado (com filtros por região e setor).</p>
+
+          <h3 style="margin-top:12px">4. Ferramentas de ação</h3>
+          <p style="color:var(--muted)">Modelos de e-mail para deputados/vereadores, integração com assinaturas eletrônicas e criação de debates públicos.</p>
+        </div>
+      </section>
+
+      <section id="acao" class="section card" role="region" aria-label="Como participar">
+        <h2>Como a plataforma funciona (fluxo de uso)</h2>
+        <ol style="color:var(--muted)">
+          <li>Usuário cola a URL do projeto de lei ou faz upload do PDF.</li>
+          <li>IA faz OCR (se necessário), analisa texto e gera resumo automático.</li>
+          <li>Ferramentas visuais mostram impacto geográfico e grupos afetados.</li>
+          <li>Usuário escolhe ação: enviar mensagem ao representante, compartilhar no grupo local, assinar petição.</li>
+        </ol>
+
+        <h3 style="margin-top:12px">Exemplo de mensagem gerada</h3>
+        <blockquote style="color:var(--muted);border-left:3px solid rgba(125,211,252,0.12);padding-left:12px">
+          Prezada Deputada Maria Silva,<br/>
+          Li o projeto nº 123/2025 e estou preocupado com o impacto sobre microempreendedores na minha região. Gostaria que a senhora considerasse uma emenda que proteja pequenos negócios do aumento de tributos descrito no Art. 4º.
+        </blockquote>
+
+        <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+          <button class="btn btn-primary" onclick="alert('Mock: abrir formulário de contato')">Enviar mensagem modelada</button>
+          <button class="btn btn-ghost" onclick="alert('Mock: abrir painel de debate')">Abrir debate público</button>
+        </div>
+      </section>
+
+      <section class="section card" aria-label="Recursos visuais">
+        <h2>Imagens & mockups</h2>
+        <p style="color:var(--muted)">Imagens abaixo são ilustrativas — substitua por screenshots reais do sistema quando disponíveis.</p>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px">
+          <figure style="margin:0"><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop&s=6e2b5e5c9ae1c8a2b8d3d1c9bc2a6f7b" alt="Pessoa usando laptop para ler notícia" class="responsive"/><figcaption style="font-size:12px;color:var(--muted);margin-top:6px">Leitura simplificada</figcaption></figure>
+          <figure style="margin:0"><img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800&auto=format&fit=crop&s=2b1ad5a4f9f7a5f7b2a3b8d6f7e5a4c3" alt="Gráfico em tela mostrando dados por região" class="responsive"/><figcaption style="font-size:12px;color:var(--muted);margin-top:6px">Mapa de impacto</figcaption></figure>
+          <figure style="margin:0"><img src="https://images.unsplash.com/photo-1526378720961-6f6a0d0d0c6f?q=80&w=800&auto=format&fit=crop&s=3d2a1b9c9e8f7a6b5c4d3f2e1a0b9c8d" alt="Discussão em grupo comunitário" class="responsive"/><figcaption style="font-size:12px;color:var(--muted);margin-top:6px">Debate público</figcaption></figure>
+        </div>
+      </section>
+
+      <footer>
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+          <div>
+            <strong>LegisClara</strong><br/>
+            <small style="color:var(--muted)">Protótipo · ideação · 2025</small>
+          </div>
+          <div style="text-align:right;color:var(--muted);font-size:14px">
+            <div>Contato: <a href="mailto:contato@legisclara.org" style="color:var(--accent);text-decoration:none">contato@legisclara.org</a></div>
+            <div style="margin-top:6px">Código aberto • Uso responsável de IA</div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
